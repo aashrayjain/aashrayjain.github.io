@@ -40,6 +40,9 @@ This site showcases my background, experience, projects, skills, and my journey 
 
 ```plaintext
 /
+├── .git/
+│   └── workflows/
+│       └── jekyll-docker.yml
 ├── index.html              # Main portfolio file
 ├── assets/
 │   └── preview-image.png   # Image used for Open Graph sharing
