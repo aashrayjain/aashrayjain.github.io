@@ -40,7 +40,7 @@ This site showcases my background, experience, projects, skills, and my journey 
 
 ```plaintext
 /
-├── .git/
+├── .github/
 │   └── workflows/
 │       └── jekyll-docker.yml
 ├── index.html              # Main portfolio file
