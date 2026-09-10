@@ -17,7 +17,7 @@
 
 This repository contains the source code for my personal developer portfolio:
 
-**https://aashrayjain.github.io/**
+**[https://aashrayjain.github.io/](https://aashrayjain.github.io/)**
 
 The portfolio presents my professional journey across full-stack software development, cloud engineering, Artificial Intelligence, Machine Learning, Generative AI, and product development.
 
@@ -45,12 +45,15 @@ It brings together my experience at **Tata Consultancy Services (TCS)**, my work
 ## 🧭 Portfolio Sections
 
 ### Hero
-Professional introduction, current positioning, career metrics, calls to action and a terminal-style profile summary.
+
+Professional introduction, current positioning, career highlights, calls to action and a terminal-style profile summary.
 
 ### About
+
 Education, professional background, transition toward AI/ML, current areas of interest and LinkedIn Profile Badge integration.
 
 ### Experience
+
 A chronological timeline covering:
 
 - **Founder — ArihantQ AI & Innovation Lab**
@@ -62,30 +65,39 @@ The section highlights full-stack engineering, AWS, enterprise applications, AI/
 ### Projects
 
 #### 1. ArihantQInvoice
+
 Full-stack billing, inventory and business-management application using Node.js, Express.js, SQLite, Sequelize, EJS and Swagger.
 
 #### 2. AI-Powered Portfolio
+
 Personal portfolio website built with HTML5, CSS3, JavaScript, Bootstrap and GitHub Pages.
 
 #### 3. RAG-Powered PDF Q&A
+
 Retrieval-Augmented Generation application for question answering over PDF documents using Python, Streamlit, LangChain, Hugging Face and FAISS.
 
 #### 4. AI Cost Optimization Advisor
+
 AI-based cost-optimization advisory application using Lyzr Studio, AWS Bedrock, LLMs and RAG.
 
 ### Skills
+
 Technical skills grouped across programming, backend, frontend, databases, cloud, AI/ML & GenAI, security, data processing, DevOps and enterprise/BFSI technologies.
 
 ### Education
+
 Academic qualifications including M.Tech. in Artificial Intelligence & Machine Learning, B.Tech. in Electronics & Communication Engineering and school education.
 
 ### Achievements & Certifications
+
 Selected achievements, competitions, technical programs, professional certifications, badges and applied skills from Microsoft, IBM, Google, AWS, FutureSkills Prime, Elastic, IIT/NPTEL, HackerRank, Coding Ninjas and other organizations.
 
 ### Volunteering & Activities
+
 Selected extracurricular, community, technical-event and volunteering activities, including blood donation and environmental-awareness participation.
 
 ### Contact
+
 Professional and developer profile links for connecting with me online.
 
 ---
@@ -120,7 +132,7 @@ The portfolio is a static website and does not require a backend server or front
 
 ## 🎨 Design & UI
 
-The current interface uses a clean, modern developer-portfolio design featuring:
+The interface uses a clean, modern developer-portfolio design featuring:
 
 - Light and dark themes
 - Blue / indigo visual accents
@@ -136,8 +148,9 @@ The current interface uses a clean, modern developer-portfolio design featuring:
 - Hover transitions
 - Scroll-to-top control
 - Print-specific styling
+- Embedded resume viewer
 
-The visual system is implemented directly with HTML and CSS.
+The visual system is implemented using HTML, CSS and JavaScript.
 
 ---
 
@@ -149,6 +162,8 @@ The portfolio supports:
 - 🌙 Dark mode
 
 Theme switching is handled client-side through JavaScript using the document's `data-theme` attribute.
+
+The selected theme is persisted in the browser using `localStorage`.
 
 ---
 
@@ -164,6 +179,7 @@ On smaller screens:
 - Cards reduce internal spacing
 - Certification cards switch to a single-column layout
 - Section spacing is optimized for mobile
+- Resume viewer adapts to smaller screen sizes
 
 ---
 
@@ -182,6 +198,24 @@ During printing:
 - Links are rendered in a printable format
 
 The portfolio can therefore be saved as a PDF directly from the browser's print dialog.
+
+---
+
+## 📄 Resume
+
+The portfolio includes an integrated resume section with an embedded PDF viewer.
+
+The current resume is stored in the project root as:
+
+```text
+resume.pdf
+```
+
+The Resume section provides options to:
+
+- View the resume directly within the portfolio
+- Open the resume in a new browser tab
+- Download the resume as a PDF
 
 ---
 
@@ -205,31 +239,38 @@ The page includes metadata for search engines and social sharing:
 
 ### ArihantQInvoice
 
-Repository:  
+Repository:
+
 https://github.com/aashrayjain/arihantq-invoice
 
 ### AI-Powered Portfolio
 
-Live:  
+Live:
+
 https://aashrayjain.github.io/
 
-Source:  
+Source:
+
 https://github.com/aashrayjain/aashrayjain.github.io
 
 ### RAG-Powered PDF Q&A
 
-Live:  
+Live:
+
 https://huggingface.co/spaces/aashrayjain/rag-pdf-qa
 
-Source:  
+Source:
+
 https://huggingface.co/spaces/aashrayjain/rag-pdf-qa/tree/main
 
 ### AI Cost Optimization Advisor
 
-Live:  
+Live:
+
 https://studio.lyzr.ai/agent/68613f05656af689f82ff2de/
 
-Source:  
+Source:
+
 https://github.com/aashrayjain/ai-cost-optimization-advisor
 
 ---
@@ -239,10 +280,28 @@ https://github.com/aashrayjain/ai-cost-optimization-advisor
 ```text
 /
 ├── index.html
+├── resume.pdf
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+├── assets/
+│   └── ...
 └── README.md
 ```
 
-`index.html` contains the portfolio markup, styling and client-side JavaScript. External fonts and libraries are loaded through hosted CDN resources.
+### File Responsibilities
+
+| File / Directory | Purpose |
+|---|---|
+| `index.html` | Portfolio structure and content |
+| `css/style.css` | Custom styling, themes, responsive layout and print styles |
+| `js/script.js` | Client-side interactions and theme functionality |
+| `resume.pdf` | Embedded/downloadable resume |
+| `assets/` | Portfolio assets and supporting media |
+| `README.md` | Project documentation |
+
+External fonts and libraries are loaded through hosted CDN resources.
 
 ---
 
@@ -250,18 +309,18 @@ https://github.com/aashrayjain/ai-cost-optimization-advisor
 
 No package installation or backend server is required.
 
-### Clone the repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/aashrayjain/aashrayjain.github.io.git
 cd aashrayjain.github.io
 ```
 
-### Open directly
+### Open Directly
 
 Open `index.html` in a modern web browser.
 
-### Or use a local server
+### Or Use a Local Server
 
 ```bash
 python -m http.server 8000
@@ -272,6 +331,8 @@ Then visit:
 ```text
 http://localhost:8000
 ```
+
+Using a local server is recommended when testing assets, the embedded resume viewer and other browser-dependent functionality.
 
 ---
 
@@ -300,6 +361,7 @@ Software Developer • Full-Stack Engineer • AI/ML Explorer
 - Portfolio: https://aashrayjain.github.io/
 - GitHub: https://github.com/aashrayjain
 - LinkedIn: https://linkedin.com/in/aashray-jain-b26168119
+- Hugging Face: https://huggingface.co/aashrayjain
 
 ---
 
