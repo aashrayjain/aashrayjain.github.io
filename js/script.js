@@ -156,23 +156,68 @@ console.log(
 
 
 /* =====================================================
-   RESUME VERSION SWITCHER
+   RESUME & CV VERSION SWITCHER (v2.2, v2.1, v2.0)
 ===================================================== */
 function switchResume(version) {
     const iframe = document.getElementById('resumeIframe');
     const openLink = document.getElementById('resumeOpenLink');
-    const btnV3 = document.getElementById('btnResumeV3');
-    const btnV2 = document.getElementById('btnResumeV2');
+    const downloadLink = document.getElementById('resumeDownloadLink');
+    const btnV22 = document.getElementById('btnResumeV22');
+    const btnV21 = document.getElementById('btnResumeV21');
+    const btnV20 = document.getElementById('btnResumeV20');
 
-    if (version === 'v2') {
-        iframe.src = 'resume_v2.0.pdf';
-        openLink.href = 'resume_v2.0.pdf';
-        btnV2.className = 'btn btn-primary px-4 py-2';
-        btnV3.className = 'btn btn-outline-secondary px-4 py-2';
+    if (btnV22) btnV22.className = 'btn btn-outline-secondary px-3 py-2';
+    if (btnV21) btnV21.className = 'btn btn-outline-secondary px-3 py-2';
+    if (btnV20) btnV20.className = 'btn btn-outline-secondary px-3 py-2';
+
+    let file = 'resume_v2.2.pdf';
+    let label = 'CV v2.2 (1-Page)';
+
+    if (version === 'v2.1') {
+        file = 'resume_v2.1.pdf';
+        label = 'CV v2.1 (2-Page)';
+        if (btnV21) btnV21.className = 'btn btn-primary px-3 py-2';
+    } else if (version === 'v2.0') {
+        file = 'resume_v2.0.pdf';
+        label = 'CV v2.0 (Master)';
+        if (btnV20) btnV20.className = 'btn btn-primary px-3 py-2';
     } else {
-        iframe.src = 'resume.pdf';
-        openLink.href = 'resume.pdf';
-        btnV3.className = 'btn btn-primary px-4 py-2';
-        btnV2.className = 'btn btn-outline-secondary px-4 py-2';
+        file = 'resume_v2.2.pdf';
+        label = 'CV v2.2 (1-Page)';
+        if (btnV22) btnV22.className = 'btn btn-primary px-3 py-2';
     }
+
+    if (iframe) iframe.src = file;
+    if (openLink) openLink.href = file;
+    if (downloadLink) {
+        downloadLink.href = file;
+        downloadLink.download = `Aashray_Jain_Resume_${version}.pdf`;
+        downloadLink.innerHTML = `<i class="fas fa-download me-2"></i> Download Selected (${label})`;
+    }
+}
+
+/* =====================================================
+   DOCUMENT / COVER LETTER PREVIEW CONTROLLER
+===================================================== */
+function previewDocument(filePath, docTitle) {
+    const container = document.getElementById('coverLetterViewerContainer');
+    const iframe = document.getElementById('coverLetterIframe');
+    const title = document.getElementById('coverLetterTitle');
+    const openTab = document.getElementById('coverLetterOpenTab');
+
+    if (!container || !iframe) return;
+
+    iframe.src = filePath;
+    if (title) title.textContent = docTitle;
+    if (openTab) openTab.href = filePath;
+
+    container.classList.remove('d-none');
+    container.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+function closeDocumentPreview() {
+    const container = document.getElementById('coverLetterViewerContainer');
+    const iframe = document.getElementById('coverLetterIframe');
+    if (iframe) iframe.src = '';
+    if (container) container.classList.add('d-none');
 }

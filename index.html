@@ -103,7 +103,11 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#resume">Resume</a>
+                        <a class="nav-link" href="#resume">Resume & CV</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cover-letters">Cover Letters</a>
                     </li>
 
                 </ul>
@@ -2343,24 +2347,29 @@
 
             <div class="section-heading">
 
-                <div class="section-kicker">Curriculum Vitae</div>
+                <div class="section-kicker">Curriculum Vitae & Resume Suite</div>
 
-                <h2>Academic & Industry Credentials.</h2>
+                <h2>Professional Resume & CV Suite (v2 Series).</h2>
 
                 <p>
-                    Explore my up-to-date Academic CV (v3.0) and industry-focused Resume (v2.0) directly below,
-                    or download PDFs tailored for research labs and high-impact engineering roles.
+                    Browse tailored CV versions designed for industry engineering and research positions.
+                    Toggle between the <strong>v2.2 High-Density Edition (1-Page)</strong>, 
+                    <strong>v2.1 Executive Edition (2-Page)</strong>, and 
+                    <strong>v2.0 Comprehensive Master Edition</strong> below.
                 </p>
 
             </div>
 
-            <!-- Version Switcher Tabs -->
-            <div class="d-flex justify-content-center align-items-center gap-3 mb-4">
-                <button type="button" class="btn btn-primary px-4 py-2" id="btnResumeV3" onclick="switchResume('v3')" style="border-radius: 20px; font-weight: 600;">
-                    <i class="fas fa-graduation-cap me-2"></i> Academic CV (v3.0 - Latest)
+            <!-- Version Switcher Pills -->
+            <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 mb-4">
+                <button type="button" class="btn btn-primary px-3 py-2" id="btnResumeV22" onclick="switchResume('v2.2')" style="border-radius: 20px; font-weight: 600;">
+                    <i class="fas fa-bolt me-1"></i> CV v2.2 (1-Page High-Density)
                 </button>
-                <button type="button" class="btn btn-outline-secondary px-4 py-2" id="btnResumeV2" onclick="switchResume('v2')" style="border-radius: 20px; font-weight: 600;">
-                    <i class="fas fa-briefcase me-2"></i> Industry Resume (v2.0)
+                <button type="button" class="btn btn-outline-secondary px-3 py-2" id="btnResumeV21" onclick="switchResume('v2.1')" style="border-radius: 20px; font-weight: 600;">
+                    <i class="fas fa-file-lines me-1"></i> CV v2.1 (2-Page Executive)
+                </button>
+                <button type="button" class="btn btn-outline-secondary px-3 py-2" id="btnResumeV20" onclick="switchResume('v2.0')" style="border-radius: 20px; font-weight: 600;">
+                    <i class="fas fa-briefcase me-1"></i> CV v2.0 (Master Edition)
                 </button>
             </div>
 
@@ -2368,7 +2377,7 @@
 
                 <iframe
                     id="resumeIframe"
-                    src="resume.pdf"
+                    src="resume_v2.2.pdf"
                     title="Aashray Jain Resume / CV">
                 </iframe>
 
@@ -2378,32 +2387,46 @@
 
                 <a
                     id="resumeOpenLink"
-                    href="resume.pdf"
+                    href="resume_v2.2.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="btn-outline-custom">
                     <i class="fas fa-up-right-from-square me-2"></i>
-                    Open Active CV in New Tab
+                    Open Selected CV in New Tab
                 </a>
 
                 <a
                     id="resumeDownloadLink"
-                    href="resume.pdf"
+                    href="resume_v2.2.pdf"
                     target="_blank"
-                    download="Aashray_Jain_Resume_v3.0.pdf"
+                    download="Aashray_Jain_Resume_v2.2.pdf"
                     class="btn-primary-custom">
                     <i class="fas fa-download me-2"></i>
-                    Download Latest CV (v3.0)
+                    Download Selected CV (v2.2)
                 </a>
 
-                <a
-                    href="resume_v2.0.pdf"
-                    target="_blank"
-                    download="Aashray_Jain_Resume_v2.0.pdf"
-                    class="btn-outline-custom">
-                    <i class="fas fa-download me-2"></i>
-                    Download Resume (v2.0)
-                </a>
+                <div class="dropdown">
+                    <button class="btn btn-outline-secondary dropdown-toggle py-2 px-3" data-bs-toggle="dropdown" style="border-radius: 12px; font-weight: 600;">
+                        <i class="fas fa-layer-group me-1"></i> Download All Versions
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="resume_v2.2.pdf" download="Aashray_Jain_Resume_v2.2.pdf">
+                                <i class="fas fa-file-pdf me-2 text-danger"></i> Download CV v2.2 (1-Page Compact)
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="resume_v2.1.pdf" download="Aashray_Jain_Resume_v2.1.pdf">
+                                <i class="fas fa-file-pdf me-2 text-danger"></i> Download CV v2.1 (2-Page Executive)
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="resume_v2.0.pdf" download="Aashray_Jain_Resume_v2.0.pdf">
+                                <i class="fas fa-file-pdf me-2 text-danger"></i> Download CV v2.0 (Master Comprehensive)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
             </div>
 
@@ -2413,6 +2436,136 @@
 
 
     <!-- =========================================================
+        COVER LETTERS & RESEARCH MOTIVATION
+    ========================================================= -->
+
+    <section id="cover-letters">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div class="section-kicker">Professional Writing & Intent</div>
+
+                <h2>Cover Letters & Motivation Statements.</h2>
+
+                <p>
+                    Articulating technical passion, engineering rigor, and research motivation for high-impact AI teams and premier research centers.
+                </p>
+
+            </div>
+
+            <div class="row g-4 mb-4">
+
+                <!-- Cover Letter Card 1: Universal AI & ML -->
+                <div class="col-lg-6">
+
+                    <div class="custom-card h-100 d-flex flex-column" style="border-top: 4px solid var(--primary);">
+
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <span class="badge bg-primary" style="font-size: 0.78rem; padding: 5px 10px; border-radius: 6px;">AI & SYSTEMS TEAMS</span>
+                            <span class="badge bg-light text-dark border" style="font-size: 0.78rem; padding: 5px 10px; border-radius: 6px;">2026 EDITION</span>
+                        </div>
+
+                        <h4 class="fw-bold mb-2">Universal AI & Machine Learning Cover Letter</h4>
+                        <p class="text-muted small mb-3">
+                            Comprehensive narrative presenting full-stack engineering discipline from Tata Consultancy Services, agentic architecture (MCP) at Novafy OU, and clinical deep learning research (ArihantQNet).
+                        </p>
+
+                        <div class="p-3 rounded-3 mb-4" style="background: var(--surface-soft); font-size: 0.88rem; line-height: 1.6; border: 1px solid var(--border);">
+                            <div class="text-muted fst-italic mb-2">
+                                "Engineering modern AI products requires bridging theoretical statistical learning with industrial-grade systems engineering: verifiable safety constraints, resilient distributed microservices, and human-in-the-loop workflows..."
+                            </div>
+                            <div class="text-end fw-bold small text-primary">— Excerpt from Application</div>
+                        </div>
+
+                        <div class="mt-auto d-flex flex-wrap gap-2">
+                            <button type="button" class="btn btn-sm btn-primary" onclick="previewDocument('assets/documents/Aashray_Jain_AI_Universal_Cover_Letter.pdf', 'AI Universal Cover Letter')">
+                                <i class="fas fa-eye me-1"></i> Preview in Viewer
+                            </button>
+                            <a href="assets/documents/Aashray_Jain_AI_Universal_Cover_Letter.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary">
+                                <i class="fas fa-up-right-from-square me-1"></i> Open Tab
+                            </a>
+                            <a href="assets/documents/Aashray_Jain_AI_Universal_Cover_Letter.pdf" download="Aashray_Jain_AI_Cover_Letter.pdf" class="btn btn-sm btn-outline-secondary">
+                                <i class="fas fa-download me-1"></i> PDF
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Cover Letter Card 2: CISPA Motivation Letter -->
+                <div class="col-lg-6">
+
+                    <div class="custom-card h-100 d-flex flex-column" style="border-top: 4px solid var(--accent);">
+
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <span class="badge bg-dark" style="font-size: 0.78rem; padding: 5px 10px; border-radius: 6px; background: #6366f1 !important;">RESEARCH ADMISSIONS</span>
+                            <span class="badge bg-light text-dark border" style="font-size: 0.78rem; padding: 5px 10px; border-radius: 6px;">CISPA CSR 2027</span>
+                        </div>
+
+                        <h4 class="fw-bold mb-2">Academic Motivation Letter (CISPA Helmholtz)</h4>
+                        <p class="text-muted small mb-3">
+                            Targeted statement of motivation for Higher Research Internships at the CISPA Helmholtz Center for Information Security (Saarbrücken, Germany) across ML, Formal Safety, and Foundations.
+                        </p>
+
+                        <div class="p-3 rounded-3 mb-4" style="background: var(--surface-soft); font-size: 0.88rem; line-height: 1.6; border: 1px solid var(--border);">
+                            <div class="text-muted fst-italic mb-2">
+                                "My academic journey is anchored on trustworthy machine learning, agentic formal safety verification, and class-imbalanced neuroimaging representations, bridging experimental rigor with foundational methods..."
+                            </div>
+                            <div class="text-end fw-bold small text-primary">— Excerpt from Motivation Letter</div>
+                        </div>
+
+                        <div class="mt-auto d-flex flex-wrap gap-2">
+                            <button type="button" class="btn btn-sm btn-primary" onclick="previewDocument('assets/documents/Aashray_Jain_CISPA_Motivation_Letter.pdf', 'CISPA Letter of Motivation')">
+                                <i class="fas fa-eye me-1"></i> Preview in Viewer
+                            </button>
+                            <a href="assets/documents/Aashray_Jain_CISPA_Motivation_Letter.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary">
+                                <i class="fas fa-up-right-from-square me-1"></i> Open Tab
+                            </a>
+                            <a href="assets/documents/Aashray_Jain_CISPA_Motivation_Letter.pdf" download="Aashray_Jain_CISPA_Motivation_Letter.pdf" class="btn btn-sm btn-outline-secondary">
+                                <i class="fas fa-download me-1"></i> PDF
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Interactive Document Modal/Viewer Panel -->
+            <div id="coverLetterViewerContainer" class="custom-card d-none">
+
+                <div class="d-flex align-items-center justify-content-between mb-3 pb-2 border-bottom">
+                    <div>
+                        <span class="text-muted small text-uppercase">Document Preview</span>
+                        <h5 id="coverLetterTitle" class="fw-bold mb-0">Cover Letter</h5>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-outline-danger" onclick="closeDocumentPreview()">
+                        <i class="fas fa-times me-1"></i> Close Preview
+                    </button>
+                </div>
+
+                <div class="resume-viewer mb-3">
+                    <iframe id="coverLetterIframe" src="" title="Cover Letter Preview"></iframe>
+                </div>
+
+                <div class="d-flex justify-content-end gap-2">
+                    <a id="coverLetterOpenTab" href="" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary">
+                        <i class="fas fa-up-right-from-square me-1"></i> Open Fullscreen
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+        <!-- =========================================================
          CONTACT
     ========================================================= -->
 
