@@ -45,9 +45,7 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- LinkedIn Badge -->
-    <script src="https://platform.linkedin.com/badges/js/profile.js"
-        async defer type="text/javascript"></script>
+
 
     
 </head>
@@ -420,37 +418,66 @@
 
                 <div class="col-lg-4">
 
-                    <div class="custom-card h-100">
+                    <div class="custom-card h-100 d-flex flex-column">
 
-                        <div class="icon-box">
-                            <i class="fab fa-linkedin"></i>
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="icon-box mb-0" style="width: 44px; height: 44px; font-size: 1.2rem;">
+                                <i class="fab fa-linkedin" style="color: #0a66c2;"></i>
+                            </div>
+                            <span class="badge bg-light text-primary border" style="font-size: 0.75rem; font-weight: 600;">
+                                <i class="fas fa-check-circle me-1 text-success"></i> VERIFIED PROFILE
+                            </span>
                         </div>
 
-                        <h4 class="fw-bold mb-3">
+                        <h4 class="fw-bold mb-2">
                             Professional Profile
                         </h4>
 
                         <p class="text-muted small mb-4">
-                            Connect with me professionally and explore my
-                            career journey.
+                            Connect with me professionally and explore my verified industry and research track record.
                         </p>
 
-                        <div class="linkedin-wrapper">
+                        <!-- Custom Native LinkedIn Profile Widget -->
+                        <div class="linkedin-custom-badge p-3 rounded-3 mb-4" style="background: var(--surface-soft); border: 1px solid var(--border);">
 
-                            <div
-                                class="badge-base LI-profile-badge"
-                                data-locale="en_US"
-                                data-size="large"
-                                data-theme="light"
-                                data-type="VERTICAL"
-                                data-vanity="aashray-jain-b26168119"
-                                data-version="v1">
-                                <a
-                                    class="badge-base__link LI-simple-link"
-                                    href="https://in.linkedin.com/in/aashray-jain-b26168119?trk=profile-badge">
-                                </a>
+                            <div class="d-flex align-items-center justify-content-between mb-3 pb-2 border-bottom" style="border-color: var(--border) !important;">
+                                <span class="d-flex align-items-center text-primary fw-bold" style="font-size: 1.05rem;">
+                                    <i class="fab fa-linkedin fa-lg me-2" style="color: #0a66c2;"></i> LinkedIn
+                                </span>
+                                <span class="badge bg-success" style="font-size: 0.68rem; padding: 3px 8px; border-radius: 6px;">ACTIVE</span>
                             </div>
 
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="position-relative">
+                                    <img src="assets/linkedin-avatar.png" alt="Aashray Jain" class="rounded-circle shadow-sm" style="width: 58px; height: 58px; object-fit: cover; border: 2px solid #0a66c2;">
+                                    <span class="position-absolute bottom-0 end-0 bg-success border border-white rounded-circle" style="width: 13px; height: 13px;"></span>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-0" style="font-size: 1.05rem; color: var(--text);">Aashray Jain</h5>
+                                    <div class="text-muted small" style="font-size: 0.82rem;">Novafy OU · NIMS University</div>
+                                    <div class="text-muted small" style="font-size: 0.76rem;">Jaipur, Rajasthan, India</div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 pt-2 border-top" style="border-color: var(--border) !important; font-size: 0.8rem; color: var(--text-muted); line-height: 1.45;">
+                                <div class="mb-1"><i class="fas fa-briefcase text-primary me-2"></i><strong>Current:</strong> Software Development Intern (AI & Agentic Systems) @ Novafy OU</div>
+                                <div class="mb-1"><i class="fas fa-graduation-cap text-primary me-2"></i><strong>Degree:</strong> M.Tech Candidate in AI & ML (2026–2028)</div>
+                                <div><i class="fas fa-building text-primary me-2"></i><strong>Former:</strong> Systems Engineer @ Tata Consultancy Services (3.8 yrs)</div>
+                            </div>
+
+                            <a href="https://www.linkedin.com/in/aashray-jain-b26168119/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary w-100 fw-bold" style="border-radius: 20px; font-size: 0.85rem; border-color: #0a66c2; color: #0a66c2;">
+                                <i class="fab fa-linkedin me-1"></i> View Full LinkedIn Profile
+                            </a>
+
+                        </div>
+
+                        <div class="mt-auto">
+                            <div class="text-muted small d-flex justify-content-between align-items-center">
+                                <span><i class="fas fa-users me-1 text-primary"></i> 500+ Connections</span>
+                                <a href="https://www.linkedin.com/in/aashray-jain-b26168119/" target="_blank" rel="noopener noreferrer" class="text-primary fw-bold" style="font-size: 0.8rem;">
+                                    Connect <i class="fas fa-arrow-right ms-1"></i>
+                                </a>
+                            </div>
                         </div>
 
                     </div>
@@ -2455,79 +2482,84 @@
 
             </div>
 
-            <div class="row g-4 mb-4">
+            <div class="row g-4 mb-4 justify-content-center">
 
-                <!-- Cover Letter Card 1: Universal AI & ML -->
-                <div class="col-lg-6">
+                <!-- Universal AI & ML Cover Letter (Hero Presentation) -->
+                <div class="col-lg-10">
 
-                    <div class="custom-card h-100 d-flex flex-column" style="border-top: 4px solid var(--primary);">
+                    <div class="custom-card" style="border-left: 4px solid var(--primary);">
 
-                        <div class="d-flex align-items-center justify-content-between mb-3">
-                            <span class="badge bg-primary" style="font-size: 0.78rem; padding: 5px 10px; border-radius: 6px;">AI & SYSTEMS TEAMS</span>
-                            <span class="badge bg-light text-dark border" style="font-size: 0.78rem; padding: 5px 10px; border-radius: 6px;">2026 EDITION</span>
-                        </div>
+                        <div class="row align-items-center g-4">
 
-                        <h4 class="fw-bold mb-2">Universal AI & Machine Learning Cover Letter</h4>
-                        <p class="text-muted small mb-3">
-                            Comprehensive narrative presenting full-stack engineering discipline from Tata Consultancy Services, agentic architecture (MCP) at Novafy OU, and clinical deep learning research (ArihantQNet).
-                        </p>
+                            <div class="col-lg-8">
 
-                        <div class="p-3 rounded-3 mb-4" style="background: var(--surface-soft); font-size: 0.88rem; line-height: 1.6; border: 1px solid var(--border);">
-                            <div class="text-muted fst-italic mb-2">
-                                "Engineering modern AI products requires bridging theoretical statistical learning with industrial-grade systems engineering: verifiable safety constraints, resilient distributed microservices, and human-in-the-loop workflows..."
+                                <div class="d-flex align-items-center gap-2 mb-2">
+                                    <span class="badge bg-primary" style="font-size: 0.8rem; padding: 6px 12px; border-radius: 8px;">EXECUTIVE STATEMENT</span>
+                                    <span class="badge bg-light text-dark border" style="font-size: 0.8rem; padding: 6px 12px; border-radius: 8px;">2026 EDITION</span>
+                                    <span class="badge bg-success" style="font-size: 0.8rem; padding: 6px 12px; border-radius: 8px;">10/10 ATS COMPLIANT</span>
+                                </div>
+
+                                <h3 class="fw-bold mb-3" style="font-size: 1.5rem;">
+                                    Universal AI & Machine Learning Cover Letter
+                                </h3>
+
+                                <p class="text-muted mb-3" style="font-size: 0.95rem; line-height: 1.6;">
+                                    A structured professional narrative crafted for AI, Machine Learning, and Agentic Engineering teams.
+                                    Synthesizes 4+ years of battle-tested enterprise distributed systems at <strong>Tata Consultancy Services</strong>, 
+                                    protocol-driven agent orchestration (MCP) and HITL safety verification at <strong>Novafy OU (Germany)</strong>, 
+                                    and peer-level neuroimaging deep learning research with <strong>ArihantQNet</strong>.
+                                </p>
+
+                                <div class="p-3 rounded-3 mb-4" style="background: var(--surface-soft); font-size: 0.9rem; line-height: 1.65; border: 1px solid var(--border);">
+                                    <div class="text-muted fst-italic mb-2">
+                                        "Engineering modern AI products requires bridging theoretical statistical learning with industrial-grade systems engineering: verifiable safety constraints, resilient distributed microservices, and human-in-the-loop workflows. My background unites both domains..."
+                                    </div>
+                                    <div class="text-end fw-bold small text-primary">— Excerpt from Application Statement</div>
+                                </div>
+
+                                <div class="d-flex flex-wrap gap-3">
+                                    <button type="button" class="btn-primary-custom" onclick="previewDocument('assets/documents/Aashray_Jain_AI_Universal_Cover_Letter.pdf', 'Universal AI & ML Cover Letter')">
+                                        <i class="fas fa-eye me-2"></i> Preview Document
+                                    </button>
+                                    <a href="assets/documents/Aashray_Jain_AI_Universal_Cover_Letter.pdf" target="_blank" rel="noopener noreferrer" class="btn-outline-custom">
+                                        <i class="fas fa-up-right-from-square me-2"></i> Open in New Tab
+                                    </a>
+                                    <a href="assets/documents/Aashray_Jain_AI_Universal_Cover_Letter.pdf" download="Aashray_Jain_AI_Cover_Letter.pdf" class="btn-outline-custom">
+                                        <i class="fas fa-download me-2"></i> Download PDF
+                                    </a>
+                                </div>
+
                             </div>
-                            <div class="text-end fw-bold small text-primary">— Excerpt from Application</div>
-                        </div>
 
-                        <div class="mt-auto d-flex flex-wrap gap-2">
-                            <button type="button" class="btn btn-sm btn-primary" onclick="previewDocument('assets/documents/Aashray_Jain_AI_Universal_Cover_Letter.pdf', 'AI Universal Cover Letter')">
-                                <i class="fas fa-eye me-1"></i> Preview in Viewer
-                            </button>
-                            <a href="assets/documents/Aashray_Jain_AI_Universal_Cover_Letter.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary">
-                                <i class="fas fa-up-right-from-square me-1"></i> Open Tab
-                            </a>
-                            <a href="assets/documents/Aashray_Jain_AI_Universal_Cover_Letter.pdf" download="Aashray_Jain_AI_Cover_Letter.pdf" class="btn btn-sm btn-outline-secondary">
-                                <i class="fas fa-download me-1"></i> PDF
-                            </a>
-                        </div>
+                            <div class="col-lg-4 text-center">
 
-                    </div>
+                                <div class="p-4 rounded-3" style="background: var(--surface-soft); border: 1px solid var(--border);">
 
-                </div>
+                                    <div class="icon-box mx-auto mb-3" style="width: 55px; height: 55px; font-size: 1.4rem;">
+                                        <i class="fas fa-file-contract text-primary"></i>
+                                    </div>
 
+                                    <h5 class="fw-bold mb-3">Key Highlights</h5>
 
-                <!-- Cover Letter Card 2: CISPA Motivation Letter -->
-                <div class="col-lg-6">
+                                    <div class="text-start small">
+                                        <div class="py-2 border-bottom" style="border-color: var(--border) !important;">
+                                            <i class="fas fa-check text-success me-2"></i><strong>Target:</strong> Full-Stack AI & ML Systems
+                                        </div>
+                                        <div class="py-2 border-bottom" style="border-color: var(--border) !important;">
+                                            <i class="fas fa-check text-success me-2"></i><strong>Format:</strong> Strictly 1-Page Executive
+                                        </div>
+                                        <div class="py-2 border-bottom" style="border-color: var(--border) !important;">
+                                            <i class="fas fa-check text-success me-2"></i><strong>Focus:</strong> MCP, Safety, XAI, Scale
+                                        </div>
+                                        <div class="py-2">
+                                            <i class="fas fa-check text-success me-2"></i><strong>Typography:</strong> Academic LaTeX Layout
+                                        </div>
+                                    </div>
 
-                    <div class="custom-card h-100 d-flex flex-column" style="border-top: 4px solid var(--accent);">
+                                </div>
 
-                        <div class="d-flex align-items-center justify-content-between mb-3">
-                            <span class="badge bg-dark" style="font-size: 0.78rem; padding: 5px 10px; border-radius: 6px; background: #6366f1 !important;">RESEARCH ADMISSIONS</span>
-                            <span class="badge bg-light text-dark border" style="font-size: 0.78rem; padding: 5px 10px; border-radius: 6px;">CISPA CSR 2027</span>
-                        </div>
-
-                        <h4 class="fw-bold mb-2">Academic Motivation Letter (CISPA Helmholtz)</h4>
-                        <p class="text-muted small mb-3">
-                            Targeted statement of motivation for Higher Research Internships at the CISPA Helmholtz Center for Information Security (Saarbrücken, Germany) across ML, Formal Safety, and Foundations.
-                        </p>
-
-                        <div class="p-3 rounded-3 mb-4" style="background: var(--surface-soft); font-size: 0.88rem; line-height: 1.6; border: 1px solid var(--border);">
-                            <div class="text-muted fst-italic mb-2">
-                                "My academic journey is anchored on trustworthy machine learning, agentic formal safety verification, and class-imbalanced neuroimaging representations, bridging experimental rigor with foundational methods..."
                             </div>
-                            <div class="text-end fw-bold small text-primary">— Excerpt from Motivation Letter</div>
-                        </div>
 
-                        <div class="mt-auto d-flex flex-wrap gap-2">
-                            <button type="button" class="btn btn-sm btn-primary" onclick="previewDocument('assets/documents/Aashray_Jain_CISPA_Motivation_Letter.pdf', 'CISPA Letter of Motivation')">
-                                <i class="fas fa-eye me-1"></i> Preview in Viewer
-                            </button>
-                            <a href="assets/documents/Aashray_Jain_CISPA_Motivation_Letter.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary">
-                                <i class="fas fa-up-right-from-square me-1"></i> Open Tab
-                            </a>
-                            <a href="assets/documents/Aashray_Jain_CISPA_Motivation_Letter.pdf" download="Aashray_Jain_CISPA_Motivation_Letter.pdf" class="btn btn-sm btn-outline-secondary">
-                                <i class="fas fa-download me-1"></i> PDF
-                            </a>
                         </div>
 
                     </div>
