@@ -153,3 +153,26 @@ document
 console.log(
     "Aashray Jain Portfolio loaded successfully."
 );
+
+
+/* =====================================================
+   RESUME VERSION SWITCHER
+===================================================== */
+function switchResume(version) {
+    const iframe = document.getElementById('resumeIframe');
+    const openLink = document.getElementById('resumeOpenLink');
+    const btnV3 = document.getElementById('btnResumeV3');
+    const btnV2 = document.getElementById('btnResumeV2');
+
+    if (version === 'v2') {
+        iframe.src = 'resume_v2.0.pdf';
+        openLink.href = 'resume_v2.0.pdf';
+        btnV2.className = 'btn btn-primary px-4 py-2';
+        btnV3.className = 'btn btn-outline-secondary px-4 py-2';
+    } else {
+        iframe.src = 'resume.pdf';
+        openLink.href = 'resume.pdf';
+        btnV3.className = 'btn btn-primary px-4 py-2';
+        btnV2.className = 'btn btn-outline-secondary px-4 py-2';
+    }
+}
